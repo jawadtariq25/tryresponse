@@ -1,0 +1,141 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+   
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1em solid #dadada;
+    height: 85px;
+    padding: 0 3.5vw;
+
+}
+.navcont li {
+    list-style: none;
+    font-size: 1.50vw;
+    font-weight: 550;
+}
+.navcont{
+    display: flex;
+    gap: 4vw;
+    padding: 2.15vw;
+}
+.logo h2{
+    padding-left: 1vw;
+    font-size: 2.25vw;
+}
+.navcont i{
+    display: none;
+}
+.content{
+    height: calc(100% - 85px);
+    width: 100%;
+    display: flex;
+}
+.leftcon{
+    height: 100%;    
+    width: 55%;
+       
+    padding: 4vw 4vw;
+}
+.rightcon{
+    height: 100%;
+    width: 45%;
+    background-color: white;
+}
+.leftcon h1{
+    font-size: 4vw;
+}
+.leftcon h1 span{
+    color: rgb(64, 87, 193);
+}
+.leftcon p{
+    font-size: 1.27vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-bottom: 3vw;
+}
+button{
+    font-size: 1.2vw;
+    font-weight: 500;
+    padding: 1vw 1.5vw;
+    border: none;
+    border-radius: 0.5em;
+    background-color:  rgb(64, 87, 193);;
+    color: white;
+}
+.rightcon img{
+    mix-blend-mode: multiply;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:600px) {
+    .nav{
+        
+        padding: 0 5vw;
+        height: 60px;
+    }
+    .logo h2{
+        font-size: 5vw;
+
+    }
+    .content{
+        height: calc(100% - 60px);
+        background-color: white;
+        flex-direction: column;
+    }
+    .navcont li{
+        font-size: 4vw;
+        display: none;
+    }
+    .navcont i{
+        display: block;
+        font-size: 6vw;
+        font-weight: 800;
+        padding-top: 0.2em;
+    }
+    .leftcon{
+        width: 100%;
+        height: 60%;
+    }
+    .rightcon{
+        width: 100%;
+        height: 40%;
+    }
+    .leftcon h1{
+        font-size: 7.5vw;
+    }
+    .leftcon p{
+        font-size: 2.25vw;
+    }
+    .rightcon img{
+        mix-blend-mode: multiply;
+    }
+button{
+    font-size: 2.5vw;
+    padding: 2vw 3vw;
+    border-radius: 3vw;
+    font-weight: 500;
+}
+}
+ @media (max-width:768px) {
+  
+    .nav{
+        padding: 0 5vw;
+        height: 60px;      
+    }
+ }
